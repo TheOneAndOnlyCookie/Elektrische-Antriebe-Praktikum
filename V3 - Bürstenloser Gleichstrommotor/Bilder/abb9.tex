@@ -1,0 +1,75 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=0,
+xmax=0.2,
+xtick={   0, 0.05,  0.1, 0.15,  0.2},
+xlabel style={font=\color{white!15!black}},
+xlabel={ML/Nm},
+ymin=0,
+ymax=3500,
+ylabel style={font=\color{white!15!black}},
+ylabel={N/min-1},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+xmajorgrids,
+ymajorgrids,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot [color=mycolor1]
+  table[row sep=crcr]{%
+0	3030\\
+0.05	2727\\
+0.1	2486\\
+0.15	2174\\
+0.2	1906\\
+};
+\addlegendentry{20V}
+
+\addplot [color=mycolor2]
+  table[row sep=crcr]{%
+0	2270\\
+0.05	2025\\
+0.1	1806\\
+0.15	1530\\
+0.2	1281\\
+};
+\addlegendentry{15V}
+
+\addplot [color=mycolor3]
+  table[row sep=crcr]{%
+0	1550\\
+0.05	1295\\
+0.1	1100\\
+0.15	855\\
+};
+\addlegendentry{10V}
+
+\addplot [color=mycolor4]
+  table[row sep=crcr]{%
+0	0\\
+0.05	164\\
+0.1	330\\
+0.15	495\\
+0.2	660\\
+};
+\addlegendentry{1Ohm}
+
+\end{axis}
+\end{tikzpicture}%

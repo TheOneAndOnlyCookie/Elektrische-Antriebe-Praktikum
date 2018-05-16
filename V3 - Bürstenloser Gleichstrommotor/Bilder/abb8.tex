@@ -1,0 +1,77 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=0,
+xmax=360,
+xtick={  0,  60, 120, 180, 240, 300, 360},
+xlabel style={font=\color{white!15!black}},
+xlabel={$\gamma$},
+ymin=-1,
+ymax=11,
+ytick={1,5,9},
+yticklabels={{H3},{H2},{H1}},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids
+]
+\addplot[const plot, color=mycolor1, forget plot] table[row sep=crcr] {%
+0	10\\
+30	8\\
+60	8\\
+90	8\\
+120	10\\
+150	10\\
+180	10\\
+210	8\\
+240	8\\
+270	8\\
+300	10\\
+330	10\\
+360	10\\
+};
+\addplot[const plot, color=mycolor2, forget plot] table[row sep=crcr] {%
+0	4\\
+30	4\\
+60	6\\
+90	6\\
+120	6\\
+150	4\\
+180	4\\
+210	4\\
+240	6\\
+270	6\\
+300	6\\
+330	4\\
+360	4\\
+};
+\addplot[const plot, color=mycolor3, forget plot] table[row sep=crcr] {%
+0	2\\
+30	2\\
+60	2\\
+90	0\\
+120	0\\
+150	0\\
+180	2\\
+210	2\\
+240	2\\
+270	0\\
+300	0\\
+330	0\\
+360	0\\
+};
+\end{axis}
+\end{tikzpicture}%
