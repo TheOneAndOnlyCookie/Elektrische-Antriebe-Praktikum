@@ -1,0 +1,16 @@
+%Spulenstrom
+
+t = [0:10e-3:10];
+i = 15*(1-exp(-(t/1.375)));
+u = (6 * sign(t)) + 6;
+
+yyaxis left
+plot(t,u)
+ylabel('UU/V')
+axis([0 10 0 24])
+
+yyaxis right
+plot(t,i)
+ylabel('
+
+grid('on')
