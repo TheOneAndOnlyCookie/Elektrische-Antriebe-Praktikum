@@ -1,10 +1,11 @@
 \documentclass[11pt,a4paper,twoside,final]{report}
 %
-\usepackage{ngerman}            %Neue Rechtschreibung
+%\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}           %Graphiken einbinden
 \usepackage[normalsize]{subfigure}
-\usepackage{fontenc}            %Verwenden von \"{o} \"{a} \"{u} {\ss}
-\usepackage[latin1]{inputenc}   %Verwenden von \"{o} \"{a} \"{u} {\ss}
 \usepackage{fancyhdr}           %Kopf-und Fusszeilen
 \usepackage{theorem}
 \usepackage{amsmath}
@@ -136,13 +137,14 @@ Datum:~\VDatum			      &\multicolumn{2}{|l|}{Testat:}		\\
 \ 
 \thispagestyle{empty}
 %
-\end{titlepage}}
+\end{titlepage}
+}
 %
 %--------------------------------------------------------------------
 %
 \begin{document}
 %
-\maketitle
+%\maketitle
 \setcounter{page}{1}
 
 \input{aufgabe1}

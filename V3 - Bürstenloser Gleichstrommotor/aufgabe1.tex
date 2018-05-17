@@ -1,16 +1,71 @@
 
 \chapter{}\label{ch:auf1}
+In dieser Aufgabe wird der bürstenlose Gleichstrommotor (BLDC) mit der Spannung $ U_{AP} $ und dem Strom $ I_{AP} $ betrieben. Der BLDC ist starr über eine Welle mit dem Gleichstrommotor (GM) verbunden. Der GM dient hierbei als Last für den BLDC. Der GM fungiert als Generator und wird durch den Antrieb des BLDC in Bewegung versetzt und erzeugt somit eine Spannung $ U_{AL} $, welche dann einen Strom $ I_{AL} $ verursacht. Wir wollen diesen Strom $ I_{AL} $ messen. Zu beachten ist, dass $ U_{AL} $ nur Werte im Bereich [0V bis 24V] annehmen kann. \\Vom Hersteller sind für die Belastungsmaschine folgende Daten gegeben:
+\begin{equation}
+	R_{AL} = 0,4\Omega
+\end{equation}
+\begin{equation}
+	C_{E}\Psi_{PML} = 0,4Vs 
+\end{equation}
 
 \section{}\label{sec:1a}
-%
-Cooler shice!
+\textit{Skizzieren Sie die Leerlaufspannung der Belastungsmaschine in Abhängigkeit von der Drehzahl $ N_{P} $ des bürstenlosen Gleichstrommotors im Bereich 0-3000 $ min^{-1} $.}\\
+Zur Ermittlung der Kennlinie ziehen wir folgende Formel heran:
+\begin{equation}
+	U_{i} = C_{E}\Psi~N
+	\label{eq:1a:Ui}
+\end{equation}
+Wir ermitteln anhand der Umdrehungen pro min die Anzahl der Umdrehungen pro s: \\
+$ 3000 min^{-1} = 50 s^{-1} $\\
+Wir setzen nun die beiden Drehzahlen in die Formel \ref{eq:1a:Ui} ein. Einmal berechnen wir den Wert, wenn der Motor stillsteht (0 Umdrehungen pro Sekunde macht), sowie ein weiteres Mal, wenn der Motor 50 Umdrehungen pro Sekunde macht, (also der maximal geforderten Drehzahl). Da wir in den Berechnungen der beiden Werte nur N ändern ist die Änderung des Ergebnisses proportional, also direkt abhängig von der eingesetzten Drehzahl. Dies bedeutet es handelt sich bei dem in Abbildung \ref{fig:1a:leerlauf} zu skizzierenden Graphen um eine Gerade. \\
+$ U_{i}[N=0] = 0,4Vs * 0 = 0 $\\
+$ U_{i}[N=50 s^{-1}] = 0,4Vs * 50s^{-1} = 20V $
 
-\begin{figure}[htb]
+\begin{figure}
 	\centering
 	\input{./Bilder/abb1.tex}
 	\caption{Leerlaufspannung der Belastungsmaschine}
+	\label{fig:1a:leerlauf}
 \end{figure}
 
+
+
+\section{}\label{sec:1b}
+\textit{Für die Belastung des BLDC wird an die Ankerklemmen des konventionellen Gleichstrommotors anstelle einer Spannungsquelle ein veränderlicher Widerstand $ R_{L} $ angeschlossen. Welchen Wert muss dieser Widerstand haben, um bei einer Drehzahl von $ N_{P} = 2000 min^{-1} $ des BLDC ein Lastmoment von $ M_{L} = 0,25Nm $ zu erzeugen?}\\ Zur Ermittlung des Wertes des Widerstands ziehen wir folgende Formel zur Bestimmung des Lastmomentes heran
+\begin{equation}
+	M_{L} = C_{M}\Psi_{PML}I_{A}
+\end{equation}
+Da der BLDC starr gekoppelt ist mit dem GM gilt: Lastmoment ($ M_{L} $) = Inneres Motormoment ($ M_{Mi} $).\\
+Aufgrund dieser Erkenntnis gilt:
+\begin{equation}
+	M_{Mi} = M_{L} = C_{M}\Psi_{PML}I_{A} = C_{M}\Psi_{PML}*\frac{U_{i}}{R_{AL}+R_{L}} = \frac{C_{E}}{2\pi}*\Psi_{PML}*\frac{U_{i}}{R_{AL}+R_{L}}
+	\label{eq:1b:MMi}
+\end{equation}
+Wir erinnern uns an die vom Hersteller gegebenen Daten der Belastungsmaschine:\\
+$ R_{AL} = 0,4\Omega $\\
+$ C_{E}\Psi_{PML} = 0,4Vs $\\
+Formel \ref{eq:1b:MMi} wird nach $R_{L}$ umgestellt, so ergibt sich folgender Zusammenhang:\\
+\begin{equation}
+	R_{L} = \frac{C_{E}\Psi_{PML}U_{i}}{2\pi M_{L}} - R_{AL}
+\end{equation}
+Damit wir $ R_{L} $  bestimmen können, müssen wir zuerst $ U_{i} $ ermitteln, was wir im Folgenden getan haben.\\
+$ U_{i}[N=33,3s^{-1}] = 0,4Vs * 33,3s^{-1} = 13,3V $\\
+$ R_{L} = \frac{0,4Vs * 13,3V}{2\pi * 0,25Nm} - 0,4\Omega $\\
+Zum Schluss dieser Berechnung haben wir eine Einheitenprüfung durchgeführt, die erhaltene Einheit soweit plausibel.
+
+
+\section{}\label{sec:1c}
+\textit{Bestimmen Sie den Zusammenhang $ N_{P}(ML) $ für einen fest vorgegebenen Lastwiderstand $ R_{L} $.}\\
+Die Gleichung \ref{eq:1a:Ui} aus Aufgabenteil \ref{sec:1a}) wird im Folgenden mit einbezogen. Wir ersetzen $ U_{i} $ durch diese Formel. Daraus ergibt sich für $ R_{L} $ nun folgender Zusammenhang:
+\begin{equation}
+	R_{L} = \frac{C_{E}\Psi_{PML}C_{E}\Psi_{PML}N_{P}}{2\pi M_{L}} - R_{AL}
+	\label{eq:1c:RL}
+\end{equation}
+Nach entsprechender Umstellung der Formel ergibt sich für $ N_{P} $:
+\begin{equation}
+	N_{P}(M_{L}) = \frac{2\pi (R_{AL}+R_{L})M_{L}}{C_{E}^{2}\Psi_{PML}^{2}}
+	\label{eq:1c:NP}
+\end{equation}
 
 
 
