@@ -3,30 +3,59 @@
 In dieser Aufgabe sind die Signale der Hallsensoren, sowie die idealisierten Stromverläufe des BLDC im Linkslauf gegeben.
 
 \section{}\label{sec:2a}
-\textit{Skizzieren Sie die entsprechenden Signale der Hallsensoren und die idealisierten Stromverläufe bei Rechtslauf.}
-
-\begin{figure}
+\textit{Skizzieren Sie die entsprechenden Signale der Hallsensoren und die idealisierten Stromverläufe bei Rechtslauf.}\\
+In den Abbildungen \ref{fig:2a:hall} und \ref{fig:2a:strom} kann man die Hallsensorsignale erkennen, sowie die dazugehörigen Stromverläufe der jeweiligen Wicklungen U,V und W. Sie sind hier im Rechtslauf dargestellt. Wenn man die Motorwelle von vorne betrachtet, dann sieht man, dass sie sich im Rechtslauf befindet (dies bedeutet, er dreht sich im Uhrzeigersinn). Wenn sich der Motor im linkslauf befindet, so dreht dieser sich gegen den Uhrzeigersinn.
+\begin{figure}[h]
+	\centering
 	\input{./Bilder/abb2.tex}
+	\caption{Signale der Hallsensoren im Rechtslauf}
+	\label{fig:2a:hall}
 \end{figure}
-\begin{figure}
+\begin{figure}[h]
+	\centering
 	\input{./Bilder/abb5.tex}
+	\caption{Stromverläufe im Rechtslauf}
+	\label{fig:2a:strom}
 \end{figure}
-
 
 \section{}\label{sec:2b}
-\begin{figure}[htb]
+In diesem Aufgabenteil sollen nun zu den rechtsläufigen Stromverläufen aus Aufgabenteil a) die entsprechenden binären Ansteuersignale der sechs Transistoren in einem Diagramm dargestellt werden. Ist der Transistor leitend, so entspricht dies einem positiven Ansteuersignal mit dem Wert 1. Wenn der Transistor sperrt, so entspricht dies dem binären Wert 0. Abbildung \ref{fig:2b:rechts} zeigt die Ansteuerung der sechs Transistoren für den Stromverlauf.
+\begin{figure}[h]
 	\centering
 	\input{./Bilder/abb4.tex}
+	\caption{Ansteuersignale im Rechtslauf}
+	\label{fig:2b:rechts}
 \end{figure}
 
 \section{}\label{sec:2c}
-\begin{figure}[htb]
+Für den Linkslauf des BLDCs sollen jetzt die Ansteuersignale geändert werden.
+Damit der Motor in den Linkslauf wechselt, müssen jeweils die Steuersignale zweier Transistoren eines Strangs miteinander getauscht werden: $ S_{VO} $ + $ S_{UU} $, $ S_{VO} $ + $ S_{VU} $ und $ S_{WO} $ + $ S_{WU} $. Dieser Tausch ist in Abbildung \ref{fig:2b:links} nachzuvollziehen.
+\begin{figure}[h]
+	\centering
 	\input{./Bilder/abb7.tex}
+	\caption{Ansteuersignale im Linkslauf}
+	\label{fig:2b:links}
 \end{figure}
 
 \section{}\label{sec:2d}
-\begin{figure}[htb]
+Für den unseren BLDC sind folgende Parameter gegeben:
+\begin{center}
+	 $ R_{AP} = 0,8\Omega $ und $ L_{AP} = 1,1mH$\\
+\end{center}
+Es soll nun für den Spannungsverlauf $ U_{U} $ der Verlauf des Ankerstroms im Strang $ U $ skizziert werden, siehe Abbildung \ref{fig:2d:strom}. Für die Berechnung nehmen wir an, dass die innere Spannung gleich Null ist.\\
+Für die Berechnung der Zeitkonstante benutzen wir diese Formel:\\
+\begin{equation}
+	\tau = \frac{L_{AP}}{R_{AP}} = \frac{1,1mH}{0,8\Omega} = 1,375ms
+\end{equation}
+Den maximalen Strangstrom berechnen wir wie folgt:
+\begin{equation}
+	I_{max} = \frac{U_{U}}{R_{LAP}} = \frac{12V}{0,8\Omega} = 15A
+\end{equation}
+\begin{figure}[h]
+	\centering
 	\input{./Bilder/abb6.tex}
+	\label{fig:2d:strom}
+	\caption{Sprungantwort des Stromes $ I_{U} $ im Strang $ U $}
 \end{figure}
 
 
