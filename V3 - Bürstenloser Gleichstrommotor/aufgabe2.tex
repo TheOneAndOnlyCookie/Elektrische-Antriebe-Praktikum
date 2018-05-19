@@ -40,7 +40,7 @@ Damit der Motor in den Linkslauf wechselt, müssen jeweils die Steuersignale zwe
 \section{}\label{sec:2d}
 Für den unseren BLDC sind folgende Parameter gegeben:
 \begin{center}
-	 $ R_{AP} = 0,8\Omega $ und $ L_{AP} = 1,1mH$\\
+	 $ R_{AP} = 0,8\Omega $ \hspace{2cm} $ L_{AP} = 1,1mH$\\
 \end{center}
 Es soll nun für den Spannungsverlauf $ U_{U} $ der Verlauf des Ankerstroms im Strang $ U $ skizziert werden, siehe Abbildung \ref{fig:2d:strom}. Für die Berechnung nehmen wir an, dass die innere Spannung gleich Null ist.\\
 Für die Berechnung der Zeitkonstante benutzen wir diese Formel:\\
@@ -51,10 +51,15 @@ Den maximalen Strangstrom berechnen wir wie folgt:
 \begin{equation}
 	I_{max} = \frac{U_{U}}{R_{LAP}} = \frac{12V}{0,8\Omega} = 15A
 \end{equation}
-\begin{figure}[h]
+\begin{figure}[t]
 	\centering
-	\input{./Bilder/abb6.tex}
-	\label{fig:2d:strom}
+	\begin{subfigure}[Spannung im Strang $ U $]
+		{\input{./Bilder/abb10.tex}}
+	\end{subfigure}
+	\begin{subfigure}[Stromverlauf im Strang $ U $]
+		{\input{./Bilder/abb11.tex}}
+		\label{fig:2d:strom}
+	\end{subfigure}
 	\caption{Sprungantwort des Stromes $ I_{U} $ im Strang $ U $}
 \end{figure}
 

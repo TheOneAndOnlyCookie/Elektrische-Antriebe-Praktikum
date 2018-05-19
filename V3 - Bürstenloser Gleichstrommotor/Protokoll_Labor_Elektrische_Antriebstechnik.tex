@@ -19,6 +19,7 @@
 \usepackage[compact]{titlesec}
 \usepackage{graphicx}
 \usepackage{pgfplots}
+\usepackage{subcaption}
 \pgfplotsset{compat=1.3}
 
 \usepackage{tikz}
@@ -46,7 +47,7 @@
 %
 %--------------------------------------------------------------------
 %
-%Kopf- und Fußzeile
+%Kopf- und Fuï¿½zeile
 %
 \pagestyle{fancyplain}
  \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
@@ -58,7 +59,7 @@
  \rfoot{}
 %--------------------------------------------------------------------
 %
-%Definition der Abschnittsüberschriften
+%Definition der Abschnittsï¿½berschriften
 %
 \titleformat{\chapter}[hang]{\normalfont\large\bfseries}{Aufgabe \thechapter}{6pt}{\large}{}
 \renewcommand{\thesection}{\alph{section}}
@@ -66,7 +67,7 @@
 %
 %--------------------------------------------------------------------
 %
-%Kommandos für die Titelseitendaten
+%Kommandos fï¿½r die Titelseitendaten
 %
 \newcommand{\VersuchNummer}[1]{\newcommand{\VNummer}{#1}}
 \newcommand{\VersuchName}[1]{\newcommand{\VName}{#1}}
@@ -98,7 +99,7 @@
 \renewcommand{\baselinestretch}{1.2}
 
 \sf\large\textbf{Hochschule Reutlingen}\\
-\sf\large\textbf{Fakultät Technik}\\
+\sf\large\textbf{Fakultï¿½t Technik}\\
 
 \vspace{7cm}
 
@@ -152,11 +153,12 @@ Datum:~\VDatum			      &\multicolumn{2}{|l|}{Testat:}		\\
 \input{aufgabe3}
 \input{aufgabe4}
 \input{aufgabe5}
+\input{aufgabe6}
 
 
 \listoffigures
 %
-%und möglicherweise noch andere Aufgaben
+%und mï¿½glicherweise noch andere Aufgaben
 %
 
 %
