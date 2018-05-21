@@ -1,10 +1,10 @@
 \documentclass[11pt,a4paper,twoside,final]{report}
 %
-\usepackage{ngerman}            %Neue Rechtschreibung
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
 \usepackage{graphicx}           %Graphiken einbinden
-\usepackage[normalsize]{subfigure}
-\usepackage{fontenc}            %Verwenden von \"{o} \"{a} \"{u} {\ss}
-\usepackage[latin1]{inputenc}   %Verwenden von \"{o} \"{a} \"{u} {\ss}
+%\usepackage[normalsize]{subfigure}
 \usepackage{fancyhdr}           %Kopf-und Fusszeilen
 \usepackage{theorem}
 \usepackage{amsmath}
@@ -17,7 +17,7 @@
 \usepackage{pdflscape}
 \usepackage[compact]{titlesec}
 \usepackage{pgfplots}
-%\usepackage{subcaption}
+\usepackage{subcaption}
 \pgfplotsset{compat=1.3}
 
 \usepackage{tikz}
@@ -45,7 +45,7 @@
 %
 %--------------------------------------------------------------------
 %
-%Kopf- und Fußzeile
+%Kopf- und Fuï¿½zeile
 %
 \pagestyle{fancyplain}
  \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
@@ -57,7 +57,7 @@
  \rfoot{}
 %--------------------------------------------------------------------
 %
-%Definition der Abschnittsüberschriften
+%Definition der Abschnittsï¿½berschriften
 %
 \titleformat{\chapter}[hang]{\normalfont\large\bfseries}{Aufgabe \thechapter}{6pt}{\large}{}
 \renewcommand{\thesection}{\alph{section}}
@@ -65,7 +65,7 @@
 %
 %--------------------------------------------------------------------
 %
-%Kommandos für die Titelseitendaten
+%Kommandos fï¿½r die Titelseitendaten
 %
 \newcommand{\VersuchNummer}[1]{\newcommand{\VNummer}{#1}}
 \newcommand{\VersuchName}[1]{\newcommand{\VName}{#1}}
@@ -97,7 +97,7 @@
 \renewcommand{\baselinestretch}{1.2}
 
 \sf\large\textbf{Hochschule Reutlingen}\\
-\sf\large\textbf{Fakultät Technik}\\
+\sf\large\textbf{Fakultï¿½t Technik}\\
 
 \vspace{7cm}
 
@@ -148,8 +148,11 @@ Datum:~\VDatum			      &\multicolumn{2}{|l|}{Testat:}		\\
 \input{aufgabe1}
 \input{aufgabe2}
 \input{aufgabe3}
+\input{aufgabe4}
+\input{aufgabe5}
+\input{aufgabe6}
 %
-%und möglicherweise noch andere Aufgaben
+%und mï¿½glicherweise noch andere Aufgaben
 %
 
 %

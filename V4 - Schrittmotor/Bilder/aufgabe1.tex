@@ -54,6 +54,7 @@ every axis plot/.append style={thick}
 };
 
 
+
 \addplot[const plot, color=mycolor1] table[row sep=crcr] {%
 0	17\\
 1	17\\
@@ -74,7 +75,8 @@ every axis plot/.append style={thick}
 16	17\\
 17	17\\
 18	17\\
-};
+}
+node[above,pos=1] {a) d};
 
 
 \addplot[const plot, color=mycolor1] table[row sep=crcr] {%
@@ -120,7 +122,7 @@ every axis plot/.append style={thick}
 16	10\\
 17	10\\
 18	10\\
-};
+}node[above,pos=1] {b) d};
 
 
 \addplot[const plot, color=mycolor2] table[row sep=crcr] {%
@@ -166,7 +168,7 @@ every axis plot/.append style={thick}
 16	3\\
 17	3\\
 18	3\\
-};
+}node[above,pos=1] {c) d};
 
 
 \addplot[const plot, color=mycolor3] table[row sep=crcr] {%

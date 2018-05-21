@@ -1,17 +1,38 @@
 \chapter{}\label{ch:aufg2}
+Für den Schrittmotor am Prüfstand sind Strangwiderstand und Stranginduktivität gegeben:
+\begin{center}
+	$ R_{S} = 2.32\Omega \hspace{2cm} L_{S} = 11.4mH $
+\end{center}
+
+\section{}\label{sec:2a}
+Es sollen die Stromverläufe im Strang 1 unter Anregung verschiedener Spannungspulse ermittelt werden. Dabei kann die innere Spannung $ U_{i1} = 0$ angenommen werden. Zunächst wird hierfür die Zeitkonstante ermittelt:
+\begin{equation}
+	\tau = \frac{L_{S}}{R_{S}} = \frac{11.4mH}{2.32\Omega} = 4.91ms \cong 5ms
+\end{equation}
+Daraufhin wird der maximale Wert berechnet, dem sich der Strom asymptotisch nähert:
+\begin{equation}
+	I_{max} = \frac{U_{1_{max}}}{R_{S}} = \frac{5V}{2.32\Omega} = 2.16A
+\end{equation}
 
 \begin{figure}[h]
 	\centering
 	\input{./Bilder/aufgabe2a.tex}
+	\label{fig:2:150}
+	\caption{Stromverlauf bei Anregungspuls von 150ms}
 \end{figure}
-
 \begin{figure}[h]
 	\centering
 	\input{./Bilder/aufgabe2b.tex}
+	\label{fig:2:35}
+	\caption{Stromverlauf bei Anregungspuls von 35ms}
 \end{figure}
-
 \begin{figure}[h]
 	\centering
 	\input{./Bilder/aufgabe2c.tex}
+	\label{fig:2:5}
+	\caption{Stromverlauf bei Anregungspuls von 5ms}
 \end{figure}
+In den Abbildungen \ref{fig:2:150} bis \ref{fig:2:5} werden die Stromverläufe anhand der oben ausgerechneten Parameter dargestellt.
 
+\section{}\label{sec:2b}
+Sollte der Spannungspuls von zu kurzer Dauer sein, kommt es vor, dass sich der Strangstrom nicht komplett aufbauen kann. Dies ist in Abbildung \ref{fig:2:5} der Fall: bevor $ I_{max} $ erreicht wird, ist der Puls von $ U_{1,3} $ bereits vorüber. Unter diesen Bedingungen kann der Motor nicht das vollständige Drehmoment aufbringen, was im Gegensatz dazu bei den Abbildungen \ref{fig:2:150} und \ref{fig:2:35} der Fall ist, da hier genug Zeit zum Aufbau des Stromes vorhanden ist.
