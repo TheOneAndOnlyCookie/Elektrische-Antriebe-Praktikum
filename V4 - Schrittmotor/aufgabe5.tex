@@ -1,9 +1,22 @@
 \chapter{}\label{ch:aufg5}
+Nun sollen mit dem Schrittmotor Einzelschritte ausgeführt werden. Währenddessen soll der Stromverlauf gemessen werden in einer Wicklung. Dieser soll anschließend erklärt werden. Der Unterschied zum in 2a) berechneten Verlauf soll ebenfalls dargelegt werden.
 
-\begin{figure}
+\section{}\label{sec:5a}
+Durch die Drehbewegung wird die innere Spannung induziert, welche sich auf den Stromverlauf auswirkt. 
+
+\section{}\label{sec:5b}
+Es soll eine mögliche Steuersignalfolge gefunden werden, mit der man eben diese Unterschiede zwischen gemessenem und berechneten Strom verhindern kann. Der Schrittmotor ist mit dieser Signalfolge zu betreiben, sowie der Stromverlauf zu messen. \\
+Es wäre eine Möglichkeit beide Brücken zu deaktivieren, eine Brücke dann einzuschalten. In dem Moment stellt sich der Rotor auf eine bestimmte Position ein. Nun schaltet man die Brücke wieder ab, sowie auf gleiche Weise wieder ein. Der Rotor dreht sich nicht, da er sich schon in Position befindet. Des Weiteren steigt der Strom nun wie in Abbildung \ref{fig:5b:strom} zu sehen an.
+\begin{figure}[h]
 	\centering
 	\input{./Bilder/aufgabe5b.tex}
+	\caption{Stromverlauf eines Stranges beim Einschaltvorgang ohne Drehbewegung}
+	\label{fig:5b:strom}
 \end{figure}
+
+\section{}\label{sec:5c}
+\textit{Berechnen Sie für den Vollschrittbetrieb drei Schrittfrequenzen so, dass die Breite des Spannungspulses jeweils der Breite der Spannungspulse aus Abbildung 7.4 (im Skript) für $ n = 1,2,3 $ entspricht. Führen Sie mit jeder dieser Frequenzen eine Messung und vergleichen Sie die gemessenen Verläufe mit denen in der Aufgabe 2a) berechneten Verläufe.}
+Wir müssen nun 2 durch die Breite in s teilen. Nun rechnen wir für $ n = 1,2,3 $ jeweils die Frequenzen aus.
 
 \begin{figure}
 	\centering
