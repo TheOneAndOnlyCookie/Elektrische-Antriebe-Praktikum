@@ -29,10 +29,9 @@ ymax=12,
 ytick={0,2,4,6,8,10},
 yticklabels={{$ S_{WU} $},{$ S_{VU} $},{$ S_{UU} $},{$ S_{WO} $},{$ S_{VO}$},{$ S_{UO} $}},
 axis background/.style={fill=white},
-axis x line*=bottom,
-axis y line*=left,
 xmajorgrids,
-ymajorgrids
+ymajorgrids,
+major grid style={dashed}
 ]
 \addplot[const plot, color=mycolor1, forget plot] table[row sep=crcr] {%
 0	10\\

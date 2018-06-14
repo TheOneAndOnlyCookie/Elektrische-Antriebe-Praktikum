@@ -6,26 +6,24 @@
 %
 \definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
 \definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
-\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
-\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
 %
 \begin{tikzpicture}
 
 \begin{axis}[%
-width=4.521in,
-height=2.5in,
+width=4.5in,
+height=2in,
 at={(0.758in,0.481in)},
 scale only axis,
 xmin=0,
-xmax=0.2,
-xtick={   0, 0.05,  0.1, 0.15,  0.2},
-xticklabels={{0}, {0.05}, {0.1}, {0.15}, {0.2} },
+xmax=100,
+xtick={  0,  10,  20,  30,  40,  50,  60,  70,  80,  90, 100},
 xlabel style={font=\color{white!15!black}},
-xlabel={$ M_{L}/Nm $},
+xlabel={$ f_{1}/Hz $},
 ymin=0,
-ymax=3500,
+ymax=6,
+ytick={0, 1, 2, 3, 4, 5, 6},
 ylabel style={font=\color{white!15!black}},
-ylabel={$ N/min^{-1} $},
+ylabel={$ M/Nm $},
 axis background/.style={fill=white},
 xmajorgrids,
 ymajorgrids,
@@ -34,42 +32,35 @@ major grid style={dashed}
 ]
 \addplot [color=mycolor1]
   table[row sep=crcr]{%
-0	3030\\
-0.05	2727\\
-0.1	2486\\
-0.15	2174\\
-0.2	1906\\
+0	5.655088301\\
+10	5.655088301\\
+20	5.728769457\\
+30	5.704156083\\
+40	5.691869266\\
+50	5.684503535\\
+60	3.947571899\\
+70	2.900256906\\
+80	2.220509193\\
+90	1.7544764\\
+100	1.421125884\\
 };
-\addlegendentry{20V}
+\addlegendentry{$ M_{K} $}
 
 \addplot [color=mycolor2]
   table[row sep=crcr]{%
-0	2270\\
-0.05	2025\\
-0.1	1806\\
-0.15	1530\\
-0.2	1281\\
+0	3.14\\
+10	3.149962511\\
+20	3.170416813\\
+30	3.163598712\\
+40	3.160189662\\
+50	3.158144232\\
+60	2.63178686\\
+70	2.255817309\\
+80	1.973840145\\
+90	1.754524573\\
+100	1.579072116\\
 };
-\addlegendentry{15V}
-
-\addplot [color=mycolor3]
-  table[row sep=crcr]{%
-0	1550\\
-0.05	1295\\
-0.1	1100\\
-0.15	855\\
-};
-\addlegendentry{10V}
-
-\addplot [color=mycolor4]
-  table[row sep=crcr]{%
-0	0\\
-0.05	164\\
-0.1	330\\
-0.15	495\\
-0.2	660\\
-};
-\addlegendentry{1Ohm}
+\addlegendentry{$ M_{Mi} $}
 
 \end{axis}
 \end{tikzpicture}%

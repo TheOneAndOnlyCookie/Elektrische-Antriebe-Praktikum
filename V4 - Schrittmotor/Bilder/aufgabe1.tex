@@ -25,11 +25,10 @@ ymax=23,
 ytick={1,4,8,11,15,18,21},
 yticklabels={{$ I_{S2} $},{$ I_{S1} $},{$ I_{S2} $},{$ I_{S1} $},{$ I_{S2} $},{$ I_{S1} $},{$ Takt $}},
 axis background/.style={fill=white},
-axis x line*=bottom,
-axis y line*=left,
 xmajorgrids,
 ymajorgrids,
-every axis plot/.append style={thick}
+every axis plot/.append style={thick},
+major grid style={dashed}
 ]
 \addplot[const plot, color=black] table[row sep=crcr] {%
 0	21\\
