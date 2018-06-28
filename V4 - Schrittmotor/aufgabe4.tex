@@ -11,7 +11,7 @@ Es soll nun der Schrittwinkel $ \alpha $ im Voll- und Halbschrittbetrieb des Sch
 	\label{eq:4a:vs}
 \end{equation}
 \begin{equation}
-	\alpha_{VS}[Z_{P}=2] = \frac{360^{\circ}}{kZ_{p}m} = \frac{360^{\circ}}{4*1*2} = 45^{\circ}
+	\alpha_{HS}[Z_{P}=2] = \frac{360^{\circ}}{kZ_{p}m} = \frac{360^{\circ}}{4*1*2} = 45^{\circ}
 	\label{eq:4a:hs}
 \end{equation}
 
@@ -23,17 +23,25 @@ Nach den obig in a) gegebenen Formeln \ref{eq:4a:vs} und \ref{eq:4a:hs} berechne
 \label{eq:4b:vs}
 \end{equation}
 \begin{equation}
-	\alpha_{VS}[Z_{P}=50] = \frac{360^{\circ}}{kZ_{p}m} = \frac{360^{\circ}}{4*50*2} = 0.9^{\circ}
+	\alpha_{HS}[Z_{P}=50] = \frac{360^{\circ}}{kZ_{p}m} = \frac{360^{\circ}}{4*50*2} = 0.9^{\circ}
 	\label{eq:4b:hs}
 \end{equation}
 
 Um nun an die Schrittzahl des Motors zu gelangen, müssen wir $ 360^{\circ} $ (eine volle Umdrehung), durch den jeweilig ermittelten Schrittwinkel teilen. So erhalten wir:
 \begin{center}
-	Schrittzahl $ VS = 200 $\\
-	Schrittzahl $ HS = 400 $
+	Schrittzahl $ VS = 200~Schritte $\\
+	Schrittzahl $ HS = 400~Schritte$
 \end{center}
 
 \section{}\label{sec:4c}
-Es soll ermittelt werden, wie viele Schritte der Schrittmotor im Vollschritt-, bzw. Halbschrittbetrieb ausführen muss, damit der Schlitten 24mm verfahren werden kann. Die Spindelsteigung der Kugelgewindespindel beträgt 20mm pro Umdrehung.
-\\\\
-ERGÄNZEN
+Es soll ermittelt werden, wie viele Schritte der Schrittmotor im Vollschritt-, bzw. Halbschrittbetrieb ausführen muss, damit der Schlitten 24mm verfahren werden kann. Die Spindelsteigung der Kugelgewindespindel beträgt 20mm pro Umdrehung.\\
+Zuerst wird ermittelt, wie viele Umdrehungen bzw. um wie viel Grad der Motor drehen muss, damit die 24mm erreicht werden:
+\begin{equation}
+\alpha[l = 24mm] = \frac{24mm}{20mm}360^{\circ} = 432^{\circ}
+\label{eq:4c:grad}
+\end{equation}
+Der hier erhaltene Winkel wird in die Formeln nun durch $ \alpha_{VS} $ bzw. $ \alpha_{HS} $ geteilt, wodurch sich die benötigten Schrittzahlen für den Verfahrweg ergeben:
+\begin{center}
+	Schrittzahl $ VS = \frac{432^{\circ}}{1.8^{\circ}} = 240~Schritte $\\
+	Schrittzahl $ HS = \frac{432^{\circ}}{0.9^{\circ}} = 480~Schritte$ 
+\end{center}
