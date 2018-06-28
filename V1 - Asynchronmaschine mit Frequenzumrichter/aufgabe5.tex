@@ -1,1 +1,26 @@
 \chapter{}
+\section{}
+
+Die Asynchronmaschine aus dem Versuchsaufbau im Labor Antriebstechnik soll im gesteuerten Betrieb mit den Drehzahlen aus Tabelle \ref{tab:5a:Drehzahlen} betrieben werden. Hierzu wird durch die Formeln (\ref{eq:5a:omega}) und (\ref{eq:5a:f}) die benötigte Statorfrequenz errechnet, deren Ergebnisse sind ebenfalls in Tabelle \ref{tab:5a:Drehzahlen} sichtbar.
+\begin{equation}
+	\Omega_{R} = \Omega_{RM}Z_{P} = 2\pi\frac{N}{60}Z_{P}
+	\label{eq:5a:omega}
+\end{equation}
+\begin{equation}
+	f_{R} = \frac{\Omega_{R}}{2\pi}
+\label{eq:5a:f}
+\end{equation}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{p{3.5cm} | p{3.5cm} | p{3.5cm} | p{3.5cm}}
+		&&&\\[-1em]
+		Solldrehzahl $ N_{Soll} $ & Statorkreisfrequenz $ \Omega_{R} $ & Statorfrequenz $ f_{R} $ &  Gemessene Drehzahl $ N_{Mess} $\\
+		\hline &&&\\[-1em]
+		$ 600 min^{-1} $ & $ 125,7\frac{1}{s} $ & $ 20Hz $ & $ 586 min^{-1} $\\
+		$ 1500 min^{-1} $ & $ 314,2\frac{1}{s} $ & $ 50Hz $ & $ 1483 min^{-1} $ \\
+		$ 2400 min^{-1} $ & $ 502,7\frac{1}{s} $ & $ 80Hz $ & $ 2364 min^{-1} $ \\
+	\end{tabular}
+	\caption{Berechnete Statorfrequenzen für gewünschte Drehzahlen}
+	\label{tab:5a:Drehzahlen}
+\end{table}
