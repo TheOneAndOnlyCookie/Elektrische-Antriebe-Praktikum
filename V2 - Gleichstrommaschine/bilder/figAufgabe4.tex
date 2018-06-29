@@ -1,0 +1,47 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=0,
+xmax=0.5,
+xtick={   0, 0.05,  0.1, 0.15,  0.2, 0.25,  0.3, 0.35,  0.4, 0.45,  0.5},
+xlabel style={font=\color{white!15!black}},
+xlabel={$ I_{E}/A $},
+ymin=0,
+ymax=3.5,
+ytick={  0, 0.5,   1, 1.5,   2, 2.5,   3, 3.5},
+ylabel style={font=\color{white!15!black}},
+ylabel={$ c_{E}\Psi/Vs $},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+major grid style={dashed}
+]
+\addplot [color=mycolor1]
+  table[row sep=crcr]{%
+0	0.12\\
+0.05	0.792\\
+0.1	1.452\\
+0.15	1.98\\
+0.2	2.346\\
+0.25	2.574\\
+0.3	2.73\\
+0.35	2.844\\
+0.4	2.928\\
+0.45	3.006\\
+0.47	3.03\\
+};
+
+\end{axis}
+\end{tikzpicture}%
