@@ -1,6 +1,18 @@
 \chapter{}
-
+Die Aufgabe besteht darin, zu der Asynchronmaschine aus dem Labor nun eine U/f-Kennliniensteuerung zu entwerfen.
 \section{}
+Für den Statorfrequenzbereich von $ 0-100Hz $ soll der Verlauf der U/f-Kennlinie unter den folgenden Bedingungen realisiert werden:
+\begin{itemize}
+	\item Die Amplitude der Statorspannung soll für Frequenzen > 50Hz konstant gehalten werden. Es gilt hierbei: $ U_{1K} = 317V $. $ U_{1K} $ entspricht hier dem Scheitelwert der Strangspannung.
+	\item In dem obig genannten Statorfrequenzbereich sei der Betrag der Statorflussverkettung konstant zu halten.
+\end{itemize}
+
+Zuerst muss aus der gegebenen Scheitelwertspannung der Effektivwert bestimmt werden. Um die Außenleiterspannung der Sternschaltung zu berechnen ziehen wir den bereits berechneten Effektivwert der Strangspannung heran. Die benötigte Formel wurde aus dem Skript aus der Umrechnungstabelle 2.1 entnommen. Wie oben bereits erwähnt soll im Bereich zwischen $ 0-50Hz $ die Statorflussverkettung konstant gehalten werden. Berechnet werden kann die Statorflussverkettung mit der Formel (3.1). 
+\begin{equation}
+	\psi_{1k} = \frac{U_{1k}}{2\pi f} = \frac{317V}{2\pi*50Hz} = 1.009Vs
+\end{equation}
+Unser ermittelter Wert $ \psi_{1k}=1,009 $ stellt die Statorflussverkettung im Bereich $ 0-50Hz $ dar. Diese ist konstant. Entsprechend tut dieser Wert der Steigung der U/f-Kennlinie im Bereich 0-50Hz. Die Abbildung \ref{fig:3:UF} zeigt die erstellte Spannungs-Frequenz-Kennlinie.
+
 \begin{figure}[h]
 	\centering
 	\input{./Bilder/figAufgabe3.tex}
@@ -9,6 +21,12 @@
 \end{figure}
 
 \section{}
+Es soll nun ein Modell mit Simulink erstellt werden, welches ein Subsystem zeigt, mit dem die Darstellung der in Aufgabenteil a) entwickelten Funktionalität darstellen lässt.
+\begin{itemize}
+	\item Eingangsgröße System: Statorfrequenz; Ausgangsgröße System: Statorspannung
+\end{itemize}
+Es soll die Ausgangsspannung als Effektivwert der Außenleiterspannung zugegeben werden.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{./Bilder/Simulink-Modell.pdf}
