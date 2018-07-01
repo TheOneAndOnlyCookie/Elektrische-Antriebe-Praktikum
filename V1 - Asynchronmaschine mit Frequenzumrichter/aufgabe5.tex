@@ -1,5 +1,5 @@
 \chapter{}
-\section{}
+\section{}\label{sec:5a}
 
 Die Asynchronmaschine aus dem Versuchsaufbau im Labor Antriebstechnik soll im gesteuerten Betrieb mit den Drehzahlen aus Tabelle \ref{tab:5a:Drehzahlen} betrieben werden. Hierzu wird durch die Formeln (\ref{eq:5a:omega}) und (\ref{eq:5a:f}) die benötigte Statorfrequenz errechnet, deren Ergebnisse sind ebenfalls in Tabelle \ref{tab:5a:Drehzahlen} sichtbar.
 \begin{equation}
@@ -7,15 +7,15 @@ Die Asynchronmaschine aus dem Versuchsaufbau im Labor Antriebstechnik soll im ge
 	\label{eq:5a:omega}
 \end{equation}
 \begin{equation}
-	f_{R} = \frac{\Omega_{R}}{2\pi}
+	f_{R} = \frac{\Omega_{R}}{2\pi} = \frac{N}{60}Z_{P}
 \label{eq:5a:f}
 \end{equation}
 
 \begin{table}[h]
 	\centering
-	\begin{tabular}{p{3.5cm} | p{3.5cm} | p{3.5cm} | p{3.5cm}}
+	\begin{tabular}{p{3.6cm} | p{3.6cm} | p{3.6cm} | p{3.6cm}}
 		&&&\\[-1em]
-		Solldrehzahl $ N_{Soll} $ & Statorkreisfrequenz $ \Omega_{R} $ & Statorfrequenz $ f_{R} $ &  Gemessene Drehzahl $ N_{Mess} $\\
+		Solldrehzahl $ N_{Soll} $ & Statorkreisfrequenz $ \Omega_{R} $ & Statorfrequenz $ f_{R} $ &  Gemessene Drehzahl $ N_{Ist} $\\
 		\hline &&&\\[-1em]
 		$ 600 min^{-1} $ & $ 125,7\frac{1}{s} $ & $ 20Hz $ & $ 586 min^{-1} $\\
 		$ 1500 min^{-1} $ & $ 314,2\frac{1}{s} $ & $ 50Hz $ & $ 1483 min^{-1} $ \\
@@ -24,3 +24,6 @@ Die Asynchronmaschine aus dem Versuchsaufbau im Labor Antriebstechnik soll im ge
 	\caption{Berechnete Statorfrequenzen für gewünschte Drehzahlen}
 	\label{tab:5a:Drehzahlen}
 \end{table}
+
+\section{}
+In Tabelle \ref{tab:5a:Drehzahlen} wird die tatsächlich gemessene Drehzahl zu den in \ref{sec:5a}) berechneten Statorfrequenzen gezeigt. Dabei ist die Ist-Drehzahl jeweils etwas geringer als die Soll-Drehzahl. Dies ist auf verschiedene Verluste zurückzuführen: beispielsweise die nicht-ideale Lagerung der Welle, allen voran jedoch der Lüfter. Durch diese Verluste wird ein geringes Lastmoment erzeugt, wodurch die Drehzahl leicht absinkt.
