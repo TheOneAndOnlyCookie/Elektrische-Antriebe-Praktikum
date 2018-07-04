@@ -1,8 +1,66 @@
 \chapter{}
+In dieser Aufgabe soll bei unseren fremderregten Gleichstrommaschine die Parameter $ c_{E}\Psi_{N} $ und $ R_{A} $  ermittelt werden. Der Ankerstrom IA, die Ankerspannung UA und die Drehzahl N stehen uns dabei als Messgrößen zur Verfügung.
+\section{}
+In der ersten Aufgabenstellung soll ein Verfahren bestimmt werden, wie man $ c_{E}\Psi_{N} $ und $ R_{A} $ ermitteln kann. Dabei sind die Betriebszustände der Maschine zu beachten. Um $ c_{E}\Psi_{N} $ und $ R_{A} $ auszurechnen bedienen wir uns den zwei Gleichungen (\ref{eq:4:NN0}) und (\ref{eq:4:cepsi}).
+\begin{equation}
+	N_{N0} = \frac{U_{AN}}{c_{E}\psi_{N}}
+	\label{eq:4:NN0}
+\end{equation}
+\begin{equation}
+	c_{E}\psi_{N} = \frac{U_{AN}}{N_{N0}}
+	\label{eq:4:cepsi}
+\end{equation}
+
+\begin{equation}
+	U_{A} = R_{A}I_{A} + U_{i}~~ mit~ U_{i} = c_{E}\psi_{N}
+	\label{eq:4:ua}
+\end{equation}
+daraus ergibt sich der Ankerwiderstand:
+\begin{equation}
+	R_{A} = \frac{(U_{A} - c_{E}\psi_{N})}{I_{A}}
+	\label{eq:4:ra}
+\end{equation}
+Um $ c_{E}\Psi_{N} $ zu ermitteln wenden wir die nun Gleichung (\ref{eq:4:cepsi}) an. Man muss aber beachten, das der Ankerstrom hier 0 sein muss, damit $ U_{A} = U_{i} $ (2.1) gilt. Dies erreichen wir, indem wir unsere Gleichstrommaschine mit dem Synchronmotor als Lastmaschine antreiben und somit unseren GM auf eine konstante Drehzahl N setzen. Um $ R_{A} $ zu bestimmen wird die GM im stationären Betrieb betrieben, weil wir hier den Ankerstrom benötigen überhaupt die Formel (\ref{eq:4:ra}) anwenden zu können.
+
 
 \section{}
+In dieser Teilaufgabe sind nun die Parameter $ c_{E}\Psi_{N} $ und $ R_{A} $ durch unsere Annahmen im Aufgabenteil a) zu bestimmen.\\
+Für unseren zu berechnetem Parameter $ c_{E}\Psi_{N} $ haben wir unseren GM, mittels den Betrieb des Synchronmotors, auf eine konstante Drehzahl N versetzt. Die Ankerspannung wurde mithilfe eines Multimeters direkt gemessen. Weil die Messungen ungenau haben wir den Mittelwert von drei unterschiedliche Messgrößen gebildet. Die Tabelle \ref{tab:4b:cepsi} stellt unsere Messwerte mit den errechneten $ c_{E}\Psi_{N} $ dar.
 
-\begin{figure}
+\begin{table}[h]
 	\centering
-	\includegraphics[width=\textwidth]{./bilder/aufgabe4.png}
-\end{figure}
+	\begin{tabular}{p{1.5cm} p{1.5cm} p{1.5cm} | p{1.5cm}}
+		&&&\\[-1em]
+		$ U_{A}/V $ & $ N/min^{-1} $ & $ N/s^{-1} $ &  $ c_{E}\Psi_{N}/Vs $\\
+		\hline &&&\\[-1em]
+		73 & 1500 & 25 & 2.9200 \\
+		87.5 & 1800 & 30 & 2.9167 \\
+		77.9 & 1600 & 26.7 & 2.9213
+	\end{tabular}
+	\caption{Messungen von $ U_{A} $ und $ N $ zur Bestimmung von $ c_{E}\Psi_{N} $}
+	\label{tab:4b:cepsi}
+\end{table}
+Der Mittelwert von $ c_{E}\Psi_{N} $ aus Tabelle \ref{tab:4b:cepsi} ergibt hier:
+\begin{equation}
+	c_{E}\psi_{N} = \frac{1}{3} \sum\nolimits_{z=0}^3 \frac{U_{AN}}{N_{N0}} = 2.919Vs
+\end{equation}
+
+Bei dem zu berechneten Ankerwiderstand haben wir unseren GM im stationären Betrieb betrieben. Der Ankerstrom $ I_{A} $ und die Drehzahl $ N $ konnten wir direkt auf unserer Bedienoberfläche ablesen. Die einstellbare Ankerspannung $ U_{A} $ haben wir auch hier auf mehrere Werte eingestellt und mit den wert der ermittelten Maschinenkonstante aus der Tabelle \ref{tab:4b:cepsi} in die Formel (\ref{eq:4:ra}) eingesetzt und diese alles in der Tabelle \ref{tab:4b:ra} darstellt.
+\begin{table}[h]
+	\centering
+	\begin{tabular}{p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} | p{1.5cm}}
+		&&&&\\[-1em]
+		$ I_{A} $ & $ U_{A}/V $ & $ N/min^{-1} $ & $ N/s^{-1} $ &  $ R_{A}/\Omega $\\
+		\hline &&&&\\[-1em]
+		2.65 & 100 & 1705 & 28.4 & 6.43 \\
+		2.70 & 110 & 1908 & 31.8 & 6.36 \\
+		2.74 & 120 & 2106 & 35.1 & 6.40
+	\end{tabular}
+	\caption{Messungen von $ I_{A} $, $ U_{A} $ und $ N $ zur Bestimmung von $ R_{A} $}
+	\label{tab:4b:ra}
+\end{table}
+Dabei ergibt der Mittelwert von $ R_{A} $ aus Tabelle \ref{tab:4b:ra}:
+\begin{equation}
+	R_{A} = \frac{U_{A} - c_{E}\psi N}{\frac{1}{3} \sum\nolimits_{z=0}^3 I_{A}} = 6.40\Omega
+\end{equation}
+

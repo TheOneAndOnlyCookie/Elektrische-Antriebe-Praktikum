@@ -43,9 +43,9 @@ Es ist die entsprechende Kennlinie in das gemessene Drehzahl-Drehmomentkennlinie
 
 \section{}\label{sec:5c}
 \textit{Warum kann für $ U_{AP} = 10V $ das Lastmoment $ M_{L} = 0,2Nm $ nicht erreicht werden?}\\
-Der BLDC kann bei dieser niedrigen Spannung kein eigenes Drehmoment in dieser Größe mehr erzeugen.
+Das Lastmoment $ M_{L} $ kann nicht größer als das Drehmoment des BLDC sein, denn sonst würde die Lastmaschine den BLDC antreiben. Daher können keine höhere Momente als beim Schnittpunkt der $ 1\Omega $-Linie und den jeweiligen Kennlinien sowohl auf Erzeuger- als auch auf Lastseite auftreten. Da bei der hier angegeben Konstellation das Lastmoment höher als das Drehmoment des BLDC sein sollte, konnte der Messwert am Prüfstand auch nicht erreicht werden.
 
 \section{}\label{sec:5d}
 \textit{Wie ist das Verhalten des Prüfstandes, sowie die Wechselwirkungen zwischen Prüfling und Belastungsmaschine für eine konstante Ankerspannung $ U_{AP} $ bei einer Änderung von $ R_{L} $?}\\
-Mit einer Änderung von $ R_{L} $ folgt eine antiproportionale Änderung des Laststroms $ I_{AL} $. Da das Lastmoment $ M_{L} $ abhängig vom Laststrom $ I_{AL} $ ist, hat eine Änderung von $ R_{L} $ direkten Einfluss auf das Lastmoment. Durch die starre Welle sind Lastmoment und Motormoment unmittelbar voneinander abhängig. Damit die Ankerspannung $ U_{AP} $ konstant bleibt, muss einer Änderung des Drehmoments eine Änderung der Drehzahl folgen.
+Die komplette Wirkungskette sieht folgendermaßen aus: An der Erzeugermaschine liegt eine Spannung an. Diese Spannung ist die Ursache des fließenden Stroms. Durch den fließenden Strom wird ein Drehmoment verursacht, welches zu einer Drehzahl auf der Erzeugermaschine führt. Mit dieser Drehzahl wird nun auf der Seite der Last ein Lastmoment verursacht. Dieses wiederum erzeugt einen Strom, welcher wiederum für die Spannung verantwortlich ist, die auf der Lastseite ausgegeben wird. Nehmen wir nun einmal an, dass sich $ R_{L} $ ändert. Im Folgenden Beispiel wird davon ausgegangen, dass $ R_{L} $ größer wird. Was würde passieren? Dieser Einfluss auf die Wirkungskette ist im folgenden dargelegt. Dies hat ein Absinken des Stromes auf der Seite der Last zur Folge, während dies rückwirkend einen Einfluss auf das Lastmoment hat. Durch den Einfluss auf das Lastmoment steigt nun die Drehzahl.
 

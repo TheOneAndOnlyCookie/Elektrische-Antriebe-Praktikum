@@ -14,4 +14,4 @@ xtickformat('%g°')
 xlabel('\gamma')
 axis([0 360 -1 11])
 
-matlab2tikz
+%matlab2tikz

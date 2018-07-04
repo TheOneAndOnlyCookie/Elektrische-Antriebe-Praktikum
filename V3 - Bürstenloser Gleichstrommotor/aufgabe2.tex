@@ -4,7 +4,7 @@ In dieser Aufgabe sind die Signale der Hallsensoren, sowie die idealisierten Str
 
 \section{}\label{sec:2a}
 \textit{Skizzieren Sie die entsprechenden Signale der Hallsensoren und die idealisierten Stromverläufe bei Rechtslauf.}\\
-In den Abbildungen \ref{fig:2a:hall} und \ref{fig:2a:strom} kann man die Hallsensorsignale erkennen, sowie die dazugehörigen Stromverläufe der jeweiligen Wicklungen U,V und W. Sie sind hier im Rechtslauf dargestellt. Wenn man die Motorwelle von vorne betrachtet, dann sieht man, dass sie sich im Rechtslauf befindet (dies bedeutet, er dreht sich im Uhrzeigersinn). Wenn sich der Motor im linkslauf befindet, so dreht dieser sich gegen den Uhrzeigersinn.
+In den Abbildungen \ref{fig:2a:hall} und \ref{fig:2a:strom} kann man die Hallsensorsignale erkennen, sowie die dazugehörigen Stromverläufe der jeweiligen Wicklungen U,V und W. Sie sind hier im Rechtslauf dargestellt. Wenn man die Motorwelle von vorne betrachtet, dann sieht man, dass sie sich im Rechtslauf befindet (dies bedeutet, er dreht sich im Uhrzeigersinn). Wenn sich der Motor im Linkslauf befindet, so dreht dieser sich gegen den Uhrzeigersinn.
 \begin{figure}[h]
 	\centering
 	\input{./Bilder/abb2.tex}
@@ -28,11 +28,10 @@ In diesem Aufgabenteil sollen nun zu den rechtsläufigen Stromverläufen aus Auf
 \end{figure}
 
 \section{}\label{sec:2c}
-Für den Linkslauf des BLDCs sollen jetzt die Ansteuersignale geändert werden.
-Damit der Motor in den Linkslauf wechselt, müssen jeweils die Steuersignale zweier Transistoren eines Strangs miteinander getauscht werden: $ S_{VO} $ + $ S_{UU} $, $ S_{VO} $ + $ S_{VU} $ und $ S_{WO} $ + $ S_{WU} $. Dieser Tausch ist in Abbildung \ref{fig:2b:links} nachzuvollziehen.
+Die Ansteuerung des BLDCs soll nun auf Linkslauf geändert werden. Damit ein Richtungswechsel stattfindet, müssen sich die Wicklungsströme umpolen. Hierfür werden die Ansteuerungssignale der Transistorpaare (Oben und Unten) der einzelnen Stränge U, V, W vertauscht. Genauer gesagt, die Paare $ S_{UO} $ \& $ S_{UU} $, $ S_{VO} $ \& $ S_{VU} $ und $ S_{WO} $ \& $ S_{WU} $ werden getauscht. Die daraus resultierenden Signale sind in Abbildung \ref{fig:2b:links} dargestellt.
 \begin{figure}[h]
 	\centering
-	\input{./Bilder/abb7.tex}
+	\input{./Bilder/abb7korr.tex}
 	\caption{Ansteuersignale im Linkslauf}
 	\label{fig:2b:links}
 \end{figure}

@@ -17,6 +17,14 @@ Somit ergibt sich folgende Polpaarzahl:
 \end{equation}
 
 \section{}
+Die Aufgabe besteht nun darin, das Nennmoment, den Wirkungsgrad im Nennpunkt der Asynchronmaschine aus den gegebenen Daten auf dem Leistungsschild der Asynchronmaschine zu bestimmen. Aus dem Typenschild lässt sich die Leistung $ 0,37kW $ ablesen. Das Moment berechnet sich aus dem Quotienten aus dieser Leistung, sowie der Nennkreisfrequenz pro Sekunde, daher finden im Nenner die benötigten Umrechnungen statt. Wir erhalten hier also ein Moment von 2,56Nm.
+\begin{equation}
+	M_{N} = \frac{P}{\Omega_{N}} = \frac{0.37kW}{2\pi\frac{1370}{60}\frac{1}{s}} \approx 2.56Nm
+\end{equation}
+Um den Wirkungsgrad zu bestimmen, muss nach Definition die abgegebene Leistung durch die zugeführte Leistung geteilt werden. Der Wirkungsgrad der sich ergibt liegt bei 0,87. Logischerweise ist dieser <1, da es ja immer zu Verlusten in der Maschine kommt.
+\begin{equation}
+	\eta_{N} = \frac{P_{ab}}{P_{zu}} =  \frac{P}{UIcos\varphi} = \frac{370W}{400V*1.06A*cos(0.74)} \approx 0,87
+\end{equation}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{./Bilder/Typenschild.png}

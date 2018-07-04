@@ -5,23 +5,26 @@ Im folgenden sollen wir nun den Schrittmotor unter den Gegebenheiten betrachten:
 \end{center}
 
 \section{}\label{sec:3a}
-Es soll der mechanische Winkel $ \lambda_{mL} $ bestimmt werden, um den der Schrittmotor in der Ruhelage ausgerenkt wird. Als Grundlage für die Berechnung ziehen wir folgende Formel heran:
+Es soll der mechanische Winkel $ \gamma_{mL} $ bestimmt werden, um den der Schrittmotor in der Ruhelage ausgerenkt wird. Als Grundlage für die Berechnung ziehen wir folgende Formel heran:
 \begin{equation}
-	M_{L} = M_{H}sin(\lambda_{S}-\lambda_{L}) \hspace{1.5cm} mit~\lambda_{S} = 0
+	M_{L} = M_{H}sin(\gamma_{S}-\gamma_{L}) \hspace{1.5cm} mit~\gamma_{S} = 0
 \end{equation}
-Diese Formel stellen wir nach $ \lambda_{L} $ um und setzen die gegeneben Werte ein. Wir erhalten den zu bestimmenden Lastwinkel.
+Diese Formel stellen wir nach $ \gamma_{L} $ um und setzen die gegebenen Werte ein. Wir erhalten den zu bestimmenden Lastwinkel.
 
 \begin{equation}
-	\lambda_{mL} = \frac{\lambda_{L}}{Z_{P}}
+	\gamma_{L} = \gamma_{S} - sin^{-1}\frac{M_{L}}{M_{H}} = 0^{\circ} - sin^{-1}\frac{0.585\text{Nm}}{1.17\text{Nm}} = -30^{\circ}
 \end{equation}
-Unter der Berücksichtigung der gegebenen Polpaarzahl können nun den mechanischen Winkel $ \lambda_{mL} $ bestimmen.
+\begin{equation}
+	\gamma_{mL} = \frac{\gamma_{L}}{Z_{P}} = -\frac{30^{\circ}}{50} = -0.6^{\circ}
+\end{equation}
+Unter der Berücksichtigung der gegebenen Polpaarzahl können nun den mechanischen Winkel $ \gamma_{mL} $ bestimmen.
 
 \section{}\label{sec:3b}
-Es soll anhand des Diagramm nun graphisch der Winkel $ \lambda_{mL} $ ermittelt werden, um den der Schrittmotor in der Ruhelage $ \lambda_{m} = 0 $ ausgelenkt wird. Des weiteren soll die Abszisse noch mit dem passenden Winkel beschriftet werden. Mit dem Verhältnis $ \frac{M_{L}}{M_{H}} $ können wir den Lastwinkel $ \lambda_{L} $ bestimmen. Diesen können wir dann anschließend graphisch auswerten.
+Es soll anhand des Diagramms nun grafisch der Winkel $ \gamma_{mL} $ ermittelt werden, um den der Schrittmotor in der Ruhelage $ \gamma_{m} = 0^{\circ} $ ausgelenkt wird. Des weiteren soll die Abszisse noch mit dem passenden Winkel beschriftet werden. Mit dem Verhältnis $ \frac{M_{L}}{M_{H}} $ können wir den Lastwinkel $ \gamma_{L} $ bestimmen. Diesen können wir dann anschließend grafisch auswerten.
 \begin{figure}[h]
 	\centering
 	\input{./Bilder/aufgabe3b.tex}
-	\caption{Grafische Bestimmung des Lastwinkels $ \lambda_{L} $}
-	\label{fig:3b:lambda}
+	\caption{Grafische Bestimmung des Lastwinkels $ \gamma_{L} $}
+	\label{fig:3b:gamma}
 \end{figure}
 

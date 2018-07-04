@@ -1,0 +1,133 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+\definecolor{mycolor5}{rgb}{0.46600,0.67400,0.18800}%
+\definecolor{mycolor6}{rgb}{0.30100,0.74500,0.93300}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.521in,
+height=2.2in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=0,
+xmax=360,
+xtick={  0,  60, 120, 180, 240, 300, 360},
+xticklabels={{$ 0^{\circ} $},  {$ 60^{\circ} $}, {$ 120^{\circ} $}, {$ 180^{\circ} $}, {$ 240^{\circ} $}, {$ 300^{\circ} $}, {$ 360^{\circ} $}},
+xlabel style={font=\color{white!15!black}},
+xlabel={$\gamma$},
+ymin=-1,
+ymax=12,
+ytick={0,2,4,6,8,10},
+yticklabels={{$ S_{WU} $},{$ S_{VU} $},{$ S_{UU} $},{$ S_{WO} $},{$ S_{VO}$},{$ S_{UO} $}},
+axis background/.style={fill=white},
+xmajorgrids,
+ymajorgrids,
+major grid style={dashed}
+]
+\addplot[const plot, color=mycolor1] table[row sep=crcr] {%
+0	10\\
+30	11\\
+60	11\\
+90	11\\
+120	11\\
+150	10\\
+180	10\\
+210	10\\
+240	10\\
+270	10\\
+300	10\\
+330	10\\
+360	10\\
+};
+
+\addplot[const plot, color=mycolor2] table[row sep=crcr] {%
+0	9\\
+30	8\\
+60	8\\
+90	8\\
+120	8\\
+150	8\\
+180	8\\
+210	8\\
+240	8\\
+270	9\\
+300	9\\
+330	9\\
+360	9\\
+};
+
+\addplot[const plot, color=mycolor3] table[row sep=crcr] {%
+0	6\\
+30	6\\
+60	6\\
+90	6\\
+120	6\\
+150	7\\
+180	7\\
+210	7\\
+240	7\\
+270	6\\
+300	6\\
+330	6\\
+360	6\\
+};
+
+\addplot[const plot, color=mycolor4] table[row sep=crcr] {%
+0	4\\
+30	4\\
+60	4\\
+90	4\\
+120	4\\
+150	4\\
+180	4\\
+210	5\\
+240	5\\
+270	5\\
+300	5\\
+330	4\\
+360	4\\
+};
+
+\addplot[const plot, color=mycolor5] table[row sep=crcr] {%
+0	2\\
+30	2\\
+60	2\\
+90	3\\
+120	3\\
+150	3\\
+180	3\\
+210	2\\
+240	2\\
+270	2\\
+300	2\\
+330	2\\
+360	2\\
+};
+
+\addplot[const plot, color=mycolor6] table[row sep=crcr] {%
+0	1\\
+30	1\\
+60	1\\
+90	0\\
+120	0\\
+150	0\\
+180	0\\
+210	0\\
+240	0\\
+270	0\\
+300	0\\
+330	1\\
+360	1\\
+};
+
+\end{axis}
+\end{tikzpicture}%
